@@ -1,0 +1,122 @@
+{
+  "id": "41f5ef38-8c16-430a-92d2-e48e9304d7a6",
+  "version": "2.0",
+  "name": "Deydam",
+  "url": "https://www.deydam.com",
+  "tests": [{
+    "id": "d2b309d7-7d56-4662-9829-73bfd142e1e0",
+    "name": "Deydam",
+    "commands": [{
+      "id": "acbd32c5-28ed-4fa5-8c6e-b41730255c59",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63fc8276-8d9c-470e-8d15-911a4a5c3415",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1255x698",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "527f5808-6fe4-493f-a0fd-26113f4f31c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.landing-button",
+      "targets": [
+        ["css=.landing-button", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/div[2]/div/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Get started')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93143be7-de5b-440c-9399-a95433e2fbf2",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/div[2]/div/div/div/div[2]/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0a96fe8-cdf7-44c9-ae5a-1b08e865bbf5",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/div[2]/div/div/div/div[2]/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "username2"
+    }, {
+      "id": "f9a05cbb-98f6-4f75-a51c-d986e1cee20b",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/div[2]/div/div/div/div[2]/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01fadc5f-2d25-4bcb-a11c-2fe430afd97e",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/div[2]/div/div/div/div[2]/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "dummypass"
+    }, {
+      "id": "c5cea3ab-5668-476c-afbe-d041db27fdd3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/main/div/div[2]/div/div/div/div[2]/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c9617b6-4743-4299-bb17-df0a1033c01f",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Deydam | Login",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "024e0834-1599-40da-a460-88af1608902b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d2b309d7-7d56-4662-9829-73bfd142e1e0"]
+  }],
+  "urls": ["https://www.deydam.com/"],
+  "plugins": []
+}
